@@ -1,0 +1,3 @@
+teamLeader,entity_cagr,usable_years,required_cagr,nx_fit_status,reason
+Unattributed,,1,0.2457309396155174,Insufficient Data for Nx-Fit,Fewer than 2 full-FY years of data — cannot compute a growth rate at all
+Urmi Bhavesh Chheda,-0.5988046939754832,2,0.2457309396155174,Off Pace,"Only 2 usable years — CAGR is a single year-over-year swing, not a smoothed trend"

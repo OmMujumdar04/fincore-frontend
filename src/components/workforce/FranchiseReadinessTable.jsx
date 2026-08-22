@@ -1,0 +1,276 @@
+// import { useState } from "react";
+
+// export default function FranchiseReadinessTable({ data, loading }) {
+//   const [sortKey, setSortKey] = useState("lifetime_rank");
+//   const [sortAsc, setSortAsc] = useState(true);
+//   const [search, setSearch] = useState("");
+
+//   if (loading) {
+//     return (
+//       <div className="bg-white rounded-2xl shadow-md p-8">
+//         Loading...
+//       </div>
+//     );
+//   }
+
+//   function handleSort(key) {
+//     if (key === sortKey) {
+//       setSortAsc(!sortAsc);
+//     } else {
+//       setSortKey(key);
+//       setSortAsc(true);
+//     }
+//   }
+
+//   const filtered = data.filter((row) =>
+//     row.franchise_name.toLowerCase().includes(search.toLowerCase())
+//   );
+
+//   const sorted = [...filtered].sort((a, b) => {
+//     const valA = a[sortKey];
+//     const valB = b[sortKey];
+//     if (valA === null) return 1;
+//     if (valB === null) return -1;
+//     if (typeof valA === "string") {
+//       return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+//     }
+//     return sortAsc ? valA - valB : valB - valA;
+//   });
+
+//   const columns = [
+//     { key: "franchise_name", label: "Franchise" },
+//     { key: "lifetime_revenue", label: "Lifetime Revenue" },
+//     { key: "lifetime_rank", label: "Rank" },
+//     { key: "trajectory", label: "Trajectory" },
+//     { key: "momentum", label: "Momentum" },
+//     { key: "readiness_flag", label: "Readiness Flag" },
+//   ];
+
+//   return (
+//     <div className="bg-white rounded-2xl shadow-md p-6">
+//       <div className="flex justify-between items-center mb-4">
+//         <h3 className="text-xl font-bold">Franchise Readiness Table</h3>
+//         <input
+//           type="text"
+//           placeholder="Search franchise..."
+//           value={search}
+//           onChange={(e) => setSearch(e.target.value)}
+//           className="border rounded-lg px-3 py-2 text-sm"
+//         />
+//       </div>
+
+//       <div className="overflow-x-auto max-h-150 overflow-y-auto">
+//         <table className="w-full text-sm">
+//           <thead className="sticky top-0 bg-white">
+//             <tr className="border-b">
+//               {columns.map((col) => (
+//                 <th
+//                   key={col.key}
+//                   onClick={() => handleSort(col.key)}
+//                   className="text-left py-3 px-3 cursor-pointer hover:text-teal-600 select-none"
+//                 >
+//                   {col.label}
+//                   {sortKey === col.key && (sortAsc ? " ▲" : " ▼")}
+//                 </th>
+//               ))}
+//             </tr>
+//           </thead>
+//           <tbody>
+//             {sorted.map((row) => (
+//               <tr key={row.franchise_name} className="border-b hover:bg-gray-50">
+//                 <td className="py-2 px-3">{row.franchise_name}</td>
+//                 <td className="py-2 px-3">
+//                   ₹{row.lifetime_revenue.toLocaleString("en-IN")}
+//                 </td>
+//                 <td className="py-2 px-3">{row.lifetime_rank}</td>
+//                 <td className="py-2 px-3">{row.trajectory}</td>
+//                 <td className="py-2 px-3">{row.momentum}</td>
+//                 <td className="py-2 px-3">{row.readiness_flag}</td>
+//               </tr>
+//             ))}
+//           </tbody>
+//         </table>
+//       </div>
+
+//       <p className="text-xs text-gray-400 mt-3">
+//         Showing {sorted.length} of {data.length} franchises
+//       </p>
+//     </div>
+//   );
+// }
+
+
+import { useState } from "react";
+import { ChevronUp, ChevronDown, ChevronsUpDown } from "lucide-react";
+
+export default function FranchiseReadinessTable({ data, loading }) {
+  const [sortKey, setSortKey] = useState("lifetime_rank");
+  const [sortAsc, setSortAsc] = useState(true);
+  const [search, setSearch] = useState("");
+  const [flagFilter, setFlagFilter] = useState("All");
+  const [trajectoryFilter, setTrajectoryFilter] = useState("All");
+  const [momentumFilter, setMomentumFilter] = useState("All");
+
+  if (loading) {
+    return (
+      <div className="bg-white rounded-2xl shadow-md p-8">
+        Loading...
+      </div>
+    );
+  }
+
+  function handleSort(key) {
+    if (key === sortKey) {
+      setSortAsc(!sortAsc);
+    } else {
+      setSortKey(key);
+      setSortAsc(true);
+    }
+  }
+
+  // Filter options derived live from the data — never hardcoded, so a new
+  // flag introduced by a future rule change shows up automatically.
+  const flagOptions = ["All", ...new Set(data.map((r) => r.readiness_flag))].sort();
+  const trajectoryOptions = ["All", ...new Set(data.map((r) => r.trajectory))].sort();
+  const momentumOptions = ["All", ...new Set(data.map((r) => r.momentum))].sort();
+
+  const filtered = data.filter((row) => {
+    const matchesSearch = row.franchise_name.toLowerCase().includes(search.toLowerCase());
+    const matchesFlag = flagFilter === "All" || row.readiness_flag === flagFilter;
+    const matchesTrajectory = trajectoryFilter === "All" || row.trajectory === trajectoryFilter;
+    const matchesMomentum = momentumFilter === "All" || row.momentum === momentumFilter;
+    return matchesSearch && matchesFlag && matchesTrajectory && matchesMomentum;
+  });
+
+  const sorted = [...filtered].sort((a, b) => {
+    const valA = a[sortKey];
+    const valB = b[sortKey];
+    if (valA === null) return 1;
+    if (valB === null) return -1;
+    if (typeof valA === "string") {
+      return sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
+    }
+    return sortAsc ? valA - valB : valB - valA;
+  });
+
+  const columns = [
+    { key: "franchise_name", label: "Franchise" },
+    { key: "lifetime_revenue", label: "Lifetime Revenue" },
+    { key: "lifetime_rank", label: "Rank" },
+    { key: "trajectory", label: "Trajectory" },
+    { key: "momentum", label: "Momentum" },
+    { key: "readiness_flag", label: "Readiness Flag" },
+  ];
+
+  function SortIcon({ colKey }) {
+    if (sortKey !== colKey) return <ChevronsUpDown size={14} className="inline ml-1 text-gray-300" />;
+    return sortAsc
+      ? <ChevronUp size={14} className="inline ml-1 text-teal-600" />
+      : <ChevronDown size={14} className="inline ml-1 text-teal-600" />;
+  }
+
+  return (
+    <div className="bg-white rounded-2xl shadow-md p-6">
+      <div className="flex flex-wrap justify-between items-center gap-3 mb-4">
+        <h3 className="text-xl font-bold">Franchise Readiness Table</h3>
+        <input
+          type="text"
+          placeholder="Search franchise..."
+          value={search}
+          onChange={(e) => setSearch(e.target.value)}
+          className="border rounded-lg px-3 py-2 text-sm"
+        />
+      </div>
+
+      {/* FILTERS */}
+      <div className="flex flex-wrap gap-3 mb-4">
+        <select
+          value={flagFilter}
+          onChange={(e) => setFlagFilter(e.target.value)}
+          className="border rounded-lg px-3 py-2 text-sm"
+        >
+          {flagOptions.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt === "All" ? "All Readiness Flags" : opt}
+            </option>
+          ))}
+        </select>
+
+        <select
+          value={trajectoryFilter}
+          onChange={(e) => setTrajectoryFilter(e.target.value)}
+          className="border rounded-lg px-3 py-2 text-sm"
+        >
+          {trajectoryOptions.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt === "All" ? "All Trajectories" : opt}
+            </option>
+          ))}
+        </select>
+
+        <select
+          value={momentumFilter}
+          onChange={(e) => setMomentumFilter(e.target.value)}
+          className="border rounded-lg px-3 py-2 text-sm"
+        >
+          {momentumOptions.map((opt) => (
+            <option key={opt} value={opt}>
+              {opt === "All" ? "All Momentum" : opt}
+            </option>
+          ))}
+        </select>
+
+        {(flagFilter !== "All" || trajectoryFilter !== "All" || momentumFilter !== "All" || search) && (
+          <button
+            onClick={() => {
+              setFlagFilter("All");
+              setTrajectoryFilter("All");
+              setMomentumFilter("All");
+              setSearch("");
+            }}
+            className="text-sm text-teal-600 hover:underline px-2"
+          >
+            Clear filters
+          </button>
+        )}
+      </div>
+
+      <div className="overflow-x-auto max-h-150 overflow-y-auto">
+        <table className="w-full text-sm">
+          <thead className="sticky top-0 bg-white">
+            <tr className="border-b">
+              {columns.map((col) => (
+                <th
+                  key={col.key}
+                  onClick={() => handleSort(col.key)}
+                  className="text-left py-3 px-3 cursor-pointer hover:text-teal-600 select-none"
+                >
+                  {col.label}
+                  <SortIcon colKey={col.key} />
+                </th>
+              ))}
+            </tr>
+          </thead>
+          <tbody>
+            {sorted.map((row) => (
+              <tr key={row.franchise_name} className="border-b hover:bg-gray-50">
+                <td className="py-2 px-3">{row.franchise_name}</td>
+                <td className="py-2 px-3">
+                  ₹{row.lifetime_revenue.toLocaleString("en-IN")}
+                </td>
+                <td className="py-2 px-3">{row.lifetime_rank}</td>
+                <td className="py-2 px-3">{row.trajectory}</td>
+                <td className="py-2 px-3">{row.momentum}</td>
+                <td className="py-2 px-3">{row.readiness_flag}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+
+      <p className="text-xs text-gray-400 mt-3">
+        Showing {sorted.length} of {data.length} franchises
+      </p>
+    </div>
+  );
+}

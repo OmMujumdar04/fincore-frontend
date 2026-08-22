@@ -1,0 +1,20 @@
+nameOfBd,revenue_prior,bills_prior,revenue_current,bills_current,revenue_change_pct,low_data_momentum,is_new_this_year,momentum_status
+,0.0,0.0,10535.0,1.0,,True,True,New This Year
+Aagam Kamlesh Sheth,229849.0,20.0,229995.0,10.0,0.0635199631062132,False,False,Flat
+Ambica Maheshwari Intern,9281.0,1.0,0.0,0.0,-100.0,True,False,Insufficient Data
+Ashutosh Manoj Hiremath,0.0,0.0,258315.0,29.0,,True,True,New This Year
+Gayatri Ramesh Pattasani,54682.0,4.0,84597.0,11.0,54.70721626860758,False,False,Up
+Head - Office,303168.0,15.0,121858.0,10.0,-59.80512455140384,False,False,Down
+Jahnvi - Thakker,335391.0,31.0,103090.0,11.0,-69.26274109919467,False,False,Down
+Kadambinee . Kundu,0.0,2.0,69142.0,7.0,,True,False,Insufficient Data
+Komal Suresh Bhanushali,1628829.0,140.0,2699852.0,200.0,65.75417063424092,False,False,Up
+Mama . Paltasingh,66007.0,8.0,147796.0,17.0,123.90958534700864,False,False,Up
+Rajalaxmi Das Das,950419.0,86.0,1711827.0,108.0,80.1128765312983,False,False,Up
+Ruchi - Shukla,0.0,0.0,26190.0,6.0,,True,True,New This Year
+Sammed Santosh Magdum,29618.0,6.0,341306.0,32.0,1052.3600513201432,False,False,Up
+Shreya Santosh Talashilkar,3749.0,1.0,0.0,0.0,-100.0,True,False,Insufficient Data
+Shruti Wilson Adhav,0.0,0.0,29888.0,2.0,,True,True,New This Year
+Unattributed,0.0,0.0,0.0,0.0,,True,False,Insufficient Data
+Vaishnavi Parmanand Bhagat,545032.0,40.0,262717.0,18.0,-51.79787608800951,False,False,Down
+Vayunandan . Paidipaty,54027.0,7.0,213917.0,17.0,295.9446202824514,False,False,Up
+rushali rajgor,0.0,0.0,42748.0,1.0,,True,True,New This Year

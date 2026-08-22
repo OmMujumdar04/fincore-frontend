@@ -1,0 +1,216 @@
+subIndustry,total_revenue,total_bills,avg_revenue_per_bill,unique_franchises,cluster_label,low_confidence
+"Automotive, Electronics, Machinery, Chemical, Manufacturing",8062103.0,946,8522.307610993657,195,Dominant Sub-Industries,False
+"Information Technology (IT), Data Analytics, Al, Robotics, IOT",6745039.0,591,11412.925549915397,135,Dominant Sub-Industries,False
+"Banking, Fintech, Financial Services, wealth Management, Digital Payments, Insurance",4455973.0,431,10338.68445475638,82,Established / Core,False
+"Software, cloud, Cybersecurity, IT Infrastructure & Networking",3716641.0,313,11874.252396166134,102,Established / Core,False
+Business Services & Consulting,3439689.0,348,9884.163793103447,85,Established / Core,False
+"Broadcast, Outdoor, Digital, Influencer Marketing, Affiliate Marketing",2667822.0,347,7688.247838616715,87,Established / Core,False
+"Institutes, Training, Edtech, School",2284007.0,199,11477.422110552763,59,Established / Core,False
+"Hospitals, Medical Research, Dental, optical, Healthcare",2080782.0,165,12610.8,45,Established / Core,False
+"Corporate Events, event, Ceremony Public & Cultural Events",1429397.0,132,10828.765151515152,47,Established / Core,False
+"CA, Taxation, Audit, Advisory, Associates",1237936.0,130,9522.584615384616,56,Established / Core,False
+"Designing, Interior, Architect, Land scaping",1233004.0,153,8058.849673202614,60,Established / Core,False
+"Experiential & Event Advertising, Content, Media Buying & Planning",1169069.0,136,8596.095588235294,41,Emerging / Niche,False
+"Embroidery, Garment, Textile, Apparel",1024654.0,99,10350.040404040405,22,Emerging / Niche,False
+"Power, Solar Energy, Renewable",1018399.0,58,17558.603448275862,13,Premium (High Value/Bill),False
+Residential & Commercial Projects,1014406.0,112,9057.19642857143,43,Emerging / Niche,False
+Residential and Commercial,974268.0,125,7794.144,35,Emerging / Niche,False
+"Cement & Concrete, pipe, brick, suppliers",956778.0,82,11668.024390243903,27,Premium (High Value/Bill),False
+Technology & IT Services,846573.0,43,19687.74418604651,9,Premium (High Value/Bill),False
+"Pharma drugs, Therapeutic, Clinical Labs / Diagnostics",794245.0,97,8188.092783505154,33,Emerging / Niche,False
+"Courier, Logistics, Supply Chain, Packaging, Transport",775609.0,115,6744.426086956521,50,Emerging / Niche,False
+"Apparel & Clothing, Footwear, Accessories, Toys & Games, retail",771535.0,89,8668.932584269663,32,Emerging / Niche,False
+"Online By Platform, Physical Goods, Digital Goods, Ecommerce",725100.0,54,13427.777777777777,23,Premium (High Value/Bill),False
+"Aerospace, Automotive, Industrial, Environmental",677517.0,62,10927.693548387097,13,Emerging / Niche,False
+"Civil, Mechanical, Electrical, Chemical, Software",673599.0,104,6476.913461538462,38,Emerging / Niche,False
+"Gems, Precious Jewellery, Manufacturing",622153.0,69,9016.710144927536,23,Emerging / Niche,False
+Travel & Tour,513357.0,65,7897.8,30,Emerging / Niche,False
+Coworking & Flexible Workspaces,475562.0,40,11889.05,18,Premium (High Value/Bill),False
+Food & Beverage,466763.0,34,13728.323529411764,11,Premium (High Value/Bill),False
+"Snacks, Household Products, supermarkets",462163.0,74,6245.445945945946,25,Emerging / Niche,False
+"Hotels, Restaurants, Cloud Kitchen",446651.0,65,6871.553846153846,21,Emerging / Niche,False
+"Personal care, Fragrances & Perfumes, Makeup",410345.0,39,10521.666666666666,17,Emerging / Niche,False
+"Goods & materials, All",378469.0,35,10813.4,10,Emerging / Niche,False
+Information technology,376121.0,29,12969.689655172413,11,Premium (High Value/Bill),False
+Auto Ancillaries,375045.0,20,18752.25,7,Premium (High Value/Bill),False
+Green Energy,366447.0,20,18322.35,1,Premium (High Value/Bill),True
+IT Services/ Consulting,356336.0,31,11494.709677419354,8,Premium (High Value/Bill),False
+"Tissue, paper, Newsprint, Book Print & Publishing",354980.0,51,6960.392156862745,15,Emerging / Niche,False
+"Film & Television, Music, Online Games",339249.0,28,12116.035714285714,11,Premium (High Value/Bill),False
+Property Management Services,336016.0,45,7467.022222222222,17,Emerging / Niche,False
+"Acids, Polymers, adhesives, dyes, coatings",325982.0,39,8358.51282051282,16,Emerging / Niche,False
+"Raw Material,Machinery and Spare Parts",309605.0,47,6587.340425531915,18,Emerging / Niche,False
+Media,244198.0,13,18784.46153846154,3,Premium (High Value/Bill),False
+Advertising Agnecy,237947.0,35,6798.4857142857145,2,Emerging / Niche,True
+"Instrument, Laboratory Equipment, Medical",235517.0,30,7850.566666666667,9,Emerging / Niche,False
+Architecture & Interior Design,232580.0,29,8020.0,3,Emerging / Niche,False
+"Security, Safety, Facility Management",231156.0,37,6247.459459459459,10,Emerging / Niche,False
+"Structural, Automation",228546.0,26,8790.23076923077,11,Emerging / Niche,False
+Pharmaceutical,221177.0,29,7626.793103448276,5,Emerging / Niche,False
+"Food Production & Manufacturing, Beverage",217576.0,34,6399.294117647059,15,Emerging / Niche,False
+Furniture and Home Furnishing Manufacturing/ sales,215527.0,38,5671.763157894737,15,Emerging / Niche,False
+"Refineries, Petroleum & Oil - Gas",202489.0,19,10657.315789473685,4,Emerging / Niche,False
+Education,189033.0,11,17184.81818181818,1,Premium (High Value/Bill),True
+Pharmaceuticals & Ingredients,188872.0,25,7554.88,2,Emerging / Niche,True
+Education Institue,186294.0,26,7165.153846153846,9,Emerging / Niche,False
+"Fashion,Textiles & Accessories",185347.0,20,9267.35,5,Emerging / Niche,False
+"Legal services, Law firms",184970.0,17,10880.588235294117,8,Emerging / Niche,False
+Manufacturing,180165.0,23,7833.260869565217,7,Emerging / Niche,False
+Human resoucres and staffing,175079.0,25,7003.16,1,Emerging / Niche,True
+Group of companies,156343.0,5,31268.6,1,Premium (High Value/Bill),True
+"Fitness & Exercise, GYM, Nutrition & Dietetics, Herbal Medicines, Ayurveda",154028.0,21,7334.666666666667,10,Emerging / Niche,False
+IT services,149971.0,14,10712.214285714286,3,Emerging / Niche,False
+Industrial Automation,141504.0,16,8844.0,2,Emerging / Niche,True
+"BPO, KPO, LPO, MT",131938.0,21,6282.761904761905,7,Emerging / Niche,False
+Advertising & Marketing Consulting,129076.0,22,5867.090909090909,7,Emerging / Niche,False
+Technology,125250.0,8,15656.25,2,Premium (High Value/Bill),True
+"Market research, Trend Analysis",124307.0,19,6542.473684210527,12,Emerging / Niche,False
+Real Estate,118154.0,17,6950.235294117647,8,Emerging / Niche,False
+Speciality chemicals,114450.0,14,8175.0,9,Emerging / Niche,False
+Healthcare & Wellness,113217.0,15,7547.8,2,Emerging / Niche,True
+Cosmetics & Skincare,111090.0,15,7406.0,1,Emerging / Niche,True
+Engineering,110896.0,18,6160.888888888889,4,Emerging / Niche,False
+Packaging,108151.0,11,9831.90909090909,8,Emerging / Niche,False
+Digital Marketing,107895.0,9,11988.333333333334,4,Premium (High Value/Bill),False
+"Shipping, Marine, Freight Forwarding",104276.0,13,8021.2307692307695,5,Emerging / Niche,False
+"Recycling, Waste – Water Treatment",101163.0,16,6322.6875,10,Emerging / Niche,False
+Electrical/Electronic Industry,100720.0,6,16786.666666666668,2,Premium (High Value/Bill),True
+"Hardware & Equipment, Printers, Scanners, Stationery",99720.0,13,7670.7692307692305,6,Emerging / Niche,False
+Healthcare,98178.0,16,6136.125,8,Emerging / Niche,False
+Financial Consulting,92171.0,20,4608.55,8,Emerging / Niche,False
+Real Estate Development & Management,89910.0,6,14985.0,3,Premium (High Value/Bill),False
+Construction Equipment Manufacturing,85503.0,8,10687.875,1,Emerging / Niche,True
+Supply Chain,73944.0,4,18486.0,1,Premium (High Value/Bill),True
+Chemicals,69796.0,9,7755.111111111111,4,Emerging / Niche,False
+IT Services / Consulting,69230.0,9,7692.222222222223,7,Emerging / Niche,False
+Aviation,66931.0,11,6084.636363636364,4,Emerging / Niche,False
+"Roads, Highways & Bridges, construction",65365.0,14,4668.928571428572,5,Emerging / Niche,False
+Indian Financial Service Sectors,62582.0,5,12516.4,3,Premium (High Value/Bill),False
+COSMETICS/PHARMACEUTICALS,62475.0,1,62475.0,1,New / Insufficient Data,True
+Jewellery,60309.0,9,6701.0,4,Emerging / Niche,False
+"Environment, Cleantech, Recycling, Waste Management",58456.0,3,19485.333333333332,3,Premium (High Value/Bill),False
+Agrochemicals,57329.0,10,5732.9,5,Emerging / Niche,False
+Data Science,56250.0,1,56250.0,1,New / Insufficient Data,True
+Communication,55665.0,5,11133.0,1,Emerging / Niche,True
+Finance,53166.0,4,13291.5,2,Premium (High Value/Bill),True
+Toy Library,53104.0,6,8850.666666666666,1,Emerging / Niche,True
+Logistics,52345.0,8,6543.125,3,Emerging / Niche,False
+Food & Breverages,51613.0,8,6451.625,1,Emerging / Niche,True
+Banking- Finance - Insurance - Capital - Investment,50711.0,6,8451.833333333334,1,Emerging / Niche,True
+"Trust, Charitable Institutions, NGO",49105.0,3,16368.333333333334,2,Premium (High Value/Bill),True
+"Steel Plant, Rolling Mills, Steel, Iron, Mineral, Metal, Mining",46291.0,8,5786.375,4,Emerging / Niche,False
+"Print, Digital, Branding, Videos, Social Media, Visual Marketting",45451.0,5,9090.2,1,Emerging / Niche,True
+Crop Production,43733.0,2,21866.5,1,New / Insufficient Data,True
+Dance & Music,41795.0,5,8359.0,1,Emerging / Niche,True
+Manufacturing & Industrial Services,39416.0,4,9854.0,2,Emerging / Niche,True
+"Esport, Athletic",36825.0,4,9206.25,3,Emerging / Niche,False
+Trading,36585.0,7,5226.428571428572,2,Emerging / Niche,True
+Agriculture,35361.0,3,11787.0,2,Premium (High Value/Bill),True
+Manufacturing Services,35232.0,3,11744.0,3,Premium (High Value/Bill),False
+"Bag, Material, Leather",34175.0,6,5695.833333333333,2,Emerging / Niche,True
+Business Process Outsourcing (BPO) & Business Support Services,33455.0,4,8363.75,1,Emerging / Niche,True
+Technology Solutions,32370.0,3,10790.0,3,Emerging / Niche,False
+Agri Commodities Trading,32368.0,2,16184.0,2,New / Insufficient Data,True
+Textiles,32050.0,3,10683.333333333334,2,Emerging / Niche,True
+Information Technology and Services,31078.0,6,5179.666666666667,2,Emerging / Niche,True
+Beauty,29676.0,1,29676.0,1,New / Insufficient Data,True
+"Fashion, Textiles, and Accessories",29651.0,4,7412.75,2,Emerging / Niche,True
+Electric Vehicle & Dealers,28739.0,6,4789.833333333333,5,Emerging / Niche,False
+Co Working Space,28583.0,2,14291.5,1,New / Insufficient Data,True
+Software Development & Publishing,27826.0,2,13913.0,1,New / Insufficient Data,True
+Travel & Tourism Services,25875.0,3,8625.0,1,Emerging / Niche,True
+Home Appliances,25802.0,5,5160.4,4,Emerging / Niche,False
+Jute Products Manufacturing,24992.0,2,12496.0,2,New / Insufficient Data,True
+Retail- Distributor,24990.0,1,24990.0,1,New / Insufficient Data,True
+IT INDUSTRY,24365.0,1,24365.0,1,New / Insufficient Data,True
+Retailer,23709.0,3,7903.0,3,Emerging / Niche,False
+PR,23428.0,1,23428.0,1,New / Insufficient Data,True
+Advertising - Media - Marketing Research,23240.0,4,5810.0,4,Emerging / Niche,False
+Marketing,22689.0,6,3781.5,2,Emerging / Niche,True
+IT services and IT consulting,21829.0,3,7276.333333333333,1,Emerging / Niche,True
+Web Development,19523.0,2,9761.5,1,New / Insufficient Data,True
+Facility Management & Hospitality,19523.0,2,9761.5,1,New / Insufficient Data,True
+IT & ITES services,19209.0,2,9604.5,1,New / Insufficient Data,True
+Beauty & Cosmetics,18000.0,1,18000.0,1,New / Insufficient Data,True
+"dairy, poultry, aquaculture",17965.0,3,5988.333333333333,1,Emerging / Niche,True
+E-commerce,17431.0,4,4357.75,1,Emerging / Niche,True
+Service and Repair,17181.0,2,8590.5,2,New / Insufficient Data,True
+Gems and Diamonds,17169.0,1,17169.0,1,New / Insufficient Data,True
+Real Estate Development and Management,16876.0,2,8438.0,1,New / Insufficient Data,True
+Construction,16875.0,1,16875.0,1,New / Insufficient Data,True
+Non-Profit,16681.0,3,5560.333333333333,2,Emerging / Niche,True
+Network provider,15931.0,2,7965.5,2,New / Insufficient Data,True
+Chemicals & Lubricants,15566.0,4,3891.5,1,Emerging / Niche,True
+Service Provider,15307.0,2,7653.5,1,New / Insufficient Data,True
+Machinery Manufacturing,15017.0,4,3754.25,2,Emerging / Niche,True
+Automobile Industry,14920.0,2,7460.0,1,New / Insufficient Data,True
+Media Production & Publishing,14807.0,4,3701.75,1,Emerging / Niche,True
+Fashion,14244.0,3,4748.0,3,Emerging / Niche,False
+FMCG,12783.0,2,6391.5,1,New / Insufficient Data,True
+Research,11954.0,1,11954.0,1,New / Insufficient Data,True
+"Building Materials (Ceramics, Tiles, Sanitaryware)",11246.0,1,11246.0,1,New / Insufficient Data,True
+Freight Forwarding & Logistics Services,11246.0,1,11246.0,1,New / Insufficient Data,True
+WAREHOUSING,10933.0,1,10933.0,1,New / Insufficient Data,True
+e commerce,10933.0,1,10933.0,1,New / Insufficient Data,True
+Wealth & Asset Management,10777.0,2,5388.5,2,New / Insufficient Data,True
+Event Management & Planning,10496.0,3,3498.6666666666665,2,Emerging / Niche,True
+CA Firm,10340.0,2,5170.0,1,New / Insufficient Data,True
+"Imitation , Fashion Jewellery",10121.0,1,10121.0,1,New / Insufficient Data,True
+communications,9996.0,1,9996.0,1,New / Insufficient Data,True
+Business and Management Consultancy Activities,9496.0,1,9496.0,1,New / Insufficient Data,True
+Real Estate Development and Property Management,8860.0,2,4430.0,1,New / Insufficient Data,True
+"Wood, Plastic Recycling, Furniture, Fixtures, Fittings, Rubber",8622.0,2,4311.0,1,New / Insufficient Data,True
+it service,8547.0,1,8547.0,1,New / Insufficient Data,True
+Freight Forwarding,8434.0,2,4217.0,1,New / Insufficient Data,True
+Structural & Civil Engineering,8434.0,1,8434.0,1,New / Insufficient Data,True
+Management Consulting & Strategy,8434.0,1,8434.0,1,New / Insufficient Data,True
+Digital,8247.0,1,8247.0,1,New / Insufficient Data,True
+Payroll/HRMS,8191.0,3,2730.3333333333335,1,Emerging / Niche,True
+Cybersecurity,8059.0,1,8059.0,1,New / Insufficient Data,True
+Fast-Moving Consumer Goods & Services,7594.0,1,7594.0,1,New / Insufficient Data,True
+Business Services,7497.0,2,3748.5,1,New / Insufficient Data,True
+ERP Automation & Enterprise Software Consulting,7313.0,1,7313.0,1,New / Insufficient Data,True
+automation,7247.0,1,7247.0,1,New / Insufficient Data,True
+Entertainment,7122.0,1,7122.0,1,New / Insufficient Data,True
+Immigration & Visa Consulting,7028.0,1,7028.0,1,New / Insufficient Data,True
+Creative services,6750.0,2,3375.0,1,New / Insufficient Data,True
+Construction Services,6747.0,2,3373.5,2,New / Insufficient Data,True
+Immigration services,6747.0,1,6747.0,1,New / Insufficient Data,True
+Financial,6560.0,1,6560.0,1,New / Insufficient Data,True
+public Relation,6560.0,1,6560.0,1,New / Insufficient Data,True
+Jobs and other service provider,6470.0,2,3235.0,1,New / Insufficient Data,True
+Industrial Packaging Solutions,6185.0,1,6185.0,1,New / Insufficient Data,True
+Electronics and Automation,6157.0,1,6157.0,1,New / Insufficient Data,True
+Solar,5906.0,1,5906.0,1,New / Insufficient Data,True
+Apparel and Garment Manufacturing,5748.0,1,5748.0,1,New / Insufficient Data,True
+"Accounting, Audit &Tax Consultancy",5623.0,1,5623.0,1,New / Insufficient Data,True
+Legal Services & Compliance,5622.0,3,1874.0,2,Emerging / Niche,True
+Accountant,5217.0,1,5217.0,1,New / Insufficient Data,True
+Diamonds,5060.0,1,5060.0,1,New / Insufficient Data,True
+Software Development,4936.0,1,4936.0,1,New / Insufficient Data,True
+ISO Certification (Audit),4915.0,1,4915.0,1,New / Insufficient Data,True
+Software Development & IT Consulting,4873.0,1,4873.0,1,New / Insufficient Data,True
+Overseas education,4873.0,1,4873.0,1,New / Insufficient Data,True
+digital advertising,4686.0,1,4686.0,1,New / Insufficient Data,True
+Spices,4686.0,1,4686.0,1,New / Insufficient Data,True
+Private education services,4686.0,1,4686.0,1,New / Insufficient Data,True
+photograhy,4686.0,1,4686.0,1,New / Insufficient Data,True
+Legal Services,4686.0,1,4686.0,1,New / Insufficient Data,True
+interior designing,4686.0,1,4686.0,1,New / Insufficient Data,True
+hospitality,4311.0,1,4311.0,1,New / Insufficient Data,True
+Kitchen Articles,4123.0,1,4123.0,1,New / Insufficient Data,True
+Organic & Sustainable Farming,3749.0,1,3749.0,1,New / Insufficient Data,True
+Clinical Research,3713.0,1,3713.0,1,New / Insufficient Data,True
+"Electronics, Batteries, Chip/ Memory Design",3186.0,1,3186.0,1,New / Insufficient Data,True
+Beauty & Personal Care,2811.0,1,2811.0,1,New / Insufficient Data,True
+Industrial Chemical Supplies (PU chemicals),2249.0,1,2249.0,1,New / Insufficient Data,True
+ART,0.0,1,0.0,1,New / Insufficient Data,True
+Avionics and Communication system,0.0,1,0.0,1,New / Insufficient Data,True
+Language services,0.0,1,0.0,1,New / Insufficient Data,True
+Integrated Digital Marketing / E-commerce Strategy,0.0,1,0.0,1,New / Insufficient Data,True
+Herbal Tea & Wellness Beverage Brand / Food & Beverage Manufacturing Company,0.0,1,0.0,1,New / Insufficient Data,True
+Financial Services,0.0,2,0.0,1,New / Insufficient Data,True
+Enterprise Solutions,0.0,1,0.0,1,New / Insufficient Data,True
+Energy & Power Solutions,0.0,1,0.0,1,New / Insufficient Data,True
+Retail (Jewellery),0.0,1,0.0,1,New / Insufficient Data,True
+Metal Products (Non-Ferrous),0.0,1,0.0,1,New / Insufficient Data,True
