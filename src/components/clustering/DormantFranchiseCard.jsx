@@ -5,9 +5,10 @@ export default function DormantFranchiseCard() {
   const [franchises, setFranchises] = useState([]);
   const [showTable, setShowTable] = useState(false);
   const [loading, setLoading] = useState(true);
+const API_BASE = import.meta.env.VITE_API_BASE_URL || "http://127.0.0.1:8000";
 
   useEffect(() => {
-  fetch("http://127.0.0.1:8000/api/ml/clustering/dormant-franchises")
+  fetch(`${API_BASE}/api/ml/clustering/dormant-franchises`)
     .then((r) => r.json())
     .then((json) => {
       setFranchises(json.data || []);
