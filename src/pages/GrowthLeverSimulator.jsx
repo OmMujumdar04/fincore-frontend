@@ -86,6 +86,7 @@ import Lever2Card from "../components/growth/Lever2Card";
 import Lever3Card from "../components/growth/Lever3Card";
 import CombinedRevenueCard from "../components/growth/CombinedRevenueCard";
 import NxFitPanel from "../components/growth/NxFitPanel";
+import FairSharePanel from "../components/growth/FairSharePanel";
 
 function GrowthLeverSimulatorContent() {
   return (
@@ -105,6 +106,7 @@ function GrowthLeverSimulatorContent() {
 
       <CombinedRevenueCard />
       <NxFitPanel />
+      <FairSharePanel />
     </div>
   );
 }
