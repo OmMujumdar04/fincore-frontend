@@ -135,8 +135,8 @@ export default function NxFitTable({ rows = [] }) {
 
       if (!row) return false;
 
-      if (!row.nameOfBd && !row.teamLeader)
-        return false;
+      if (!row.nameOfBd && !row.teamLeader && !row.franchiseName)
+  return false;
 
       if (typeof row.nx_fit_status !== "string")
         return false;
@@ -144,32 +144,6 @@ export default function NxFitTable({ rows = [] }) {
       return true;
 
     })
-    .sort((a, b) => {
-
-      const statusOrder = {
-        "On Pace": 1,
-        "Below Pace": 2,
-        "Off Pace": 3,
-      };
-
-      const getOrder = (status) => {
-
-        if (status.includes("On Pace"))
-          return statusOrder["On Pace"];
-
-        if (status.includes("Below Pace"))
-          return statusOrder["Below Pace"];
-
-        if (status.includes("Off Pace"))
-          return statusOrder["Off Pace"];
-
-        return 4;
-
-      };
-
-      return getOrder(a.nx_fit_status) - getOrder(b.nx_fit_status);
-
-    });
 
   return (
 
@@ -217,7 +191,7 @@ export default function NxFitTable({ rows = [] }) {
               >
 
                 <td className="py-4 font-medium">
-                  {row.nameOfBd || row.teamLeader}
+                  {row.nameOfBd || row.teamLeader || row.franchiseName}
                 </td>
 
                 <td>

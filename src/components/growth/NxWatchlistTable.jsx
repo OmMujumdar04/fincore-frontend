@@ -72,7 +72,7 @@ export default function NxWatchlistTable({ rows }) {
 
                 <td className="py-4 font-medium">
 
-                  {row.nameOfBd || row.teamLeader}
+                  {row.nameOfBd || row.teamLeader || row.franchiseName}
 
                 </td>
 
